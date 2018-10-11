@@ -1,0 +1,59 @@
+html {
+    background: rgb(200, 255, 200);
+}
+
+body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    min-width: 600px;
+    min-height: 600px;
+    perspective: 1000px;
+}
+
+#pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-wrap{
+    perspective: 1000px;
+    position: absolute;
+    transition: transform 0.8s linear;
+}
+
+.picture-wrap:first-child{
+    transform: translateX(-400px);
+    max-height: 300px;
+}
+
+.picture-wrap:nth-child(3){
+    transform: translateX(400px)
+}
+
+.picture-wrap:first-child > div {
+    width: 400px;
+    filter: blur(2px);
+    opacity: 0.7;
+    background-color: black;
+    transition: opacity 2s ease, transform 0.8s linear, fitler 1s ease, height 0.8s linear;
+    transform: rotateY(-60deg);
+}
+
+.picture-wrap:nth-child(2) > div{
+    width: 400px;
+    background-color: black;
+    transition: opacity 1s ease, transform 0.8s linear, fitler 1s ease, height 0.8s linear;
+}
+
+.picture-wrap:nth-child(3) > div{
+    width: 400px;
+    background-color: black;
+    filter: blur(2px);
+    opacity: 0.7;
+    transition: opacity 1s ease, transform 0.8s linear, fitler 1s ease, height 0.8s linear;
+    transform: rotateY(60deg);
+}
