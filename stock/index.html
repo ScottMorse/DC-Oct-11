@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>News</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="page-wrap">
+            <header>
+                <h1>Stock Searcher</h1>
+                <h2>All your stock needs met</h2>
+            </header>
+            <main>
+                <div id="user-wrap">
+                    <h3>Search for a quote:</h3>
+                    <form id="quote-form" action="/submit">
+                        <input id="search-bar" type="text" placeholder="Search a stock symbol" name="search"/>
+                        <div id="results"></div>
+                    </form>
+                    <div id="quote-wrap">
+                        <h4></h4>
+                        <div id="quote-info-wrap">
+                            <div id="symbol"></div>
+                            <div id="price"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="stockQuotes.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

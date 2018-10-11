@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Source+Sans+Pro:400,700');
+
+html {
+    line-height: 1;
+    font-family: 'Source Sans Pro';
+    background-color: rgb(143, 143, 255);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#page-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 768px;
+    width: 100vw;
+    min-height: 500px;
+}
+
+h1 {
+    font-family: 'Faster One';
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#user-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-bar{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+h4 {
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+}
+
+#quote-info-wrap{
+    font-size: 25px;
+    color: darkblue;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+#results {
+    position: absolute;
+}
+
+#results > * {
+    width: 290px;
+    height: 40px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    color: darkslategray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease, color .3s ease;
+}
+#results > *:hover {
+    background-color: rgb(143, 143, 255);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.result-name {
+    margin-left: 10px;
+    color: rgb(206, 206, 206);
+}
